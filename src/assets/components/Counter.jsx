@@ -7,7 +7,7 @@ export default function Counter() {
   }
   return (
     <button
-      className="rounded-lg bg-amber-800 text-white text-lg hover:bg-amber-650 p-3 d-inline-block text-bolder shadow-lg w-[350px] mx-auto"
+      className="rounded-lg bg-amber-800 text-white text-lg hover:bg-amber-650 p-3 d-inline-block text-bolder shadow-lg w-[350px] mx-auto my-4"
       onClick={handleClick}
     >
       Clicks : {count}
