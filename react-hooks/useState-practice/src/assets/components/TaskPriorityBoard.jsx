@@ -15,13 +15,13 @@ function TaskPriorityBoard() {
 
   // Handle Task Add
   const handleAddTask = (e) => {
-    e.preventDefault(); // 1. Prevent form submission page reload
+    e.preventDefault();
     if (!taskInput.trim()) return;
 
     const newTask = {
       id: Date.now(),
       title: taskInput,
-      isCompleted: false, // 2. Boolean boolean instead of "false" string
+      isCompleted: false,
       priority: priority,
     };
 
@@ -50,7 +50,7 @@ function TaskPriorityBoard() {
   const completed = tasks.filter((task) => task.isCompleted).length;
   const highPriorityTasks = tasks.filter(
     (task) => task.priority === "High",
-  ).length; // 5. Added .length
+  ).length;
 
   // UI rendering
   return (
@@ -100,7 +100,6 @@ function TaskPriorityBoard() {
         {tasks.length === 0 ? (
           <p>No tasks found. Create one above!</p>
         ) : (
-          // 6. Used parentheses () for implicit return of JSX
           tasks.map((task) => (
             <li
               key={task.id}
