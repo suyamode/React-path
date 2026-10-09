@@ -1,12 +1,13 @@
 import React from "react";
-import ShoppingList from "./assets/components/ShoppingList";
-import TaskPriorityBoard from "./assets/components/TaskPriorityBoard";
-
+import ShoppingList from "./components/ShoppingList";
+import TaskPriorityBoard from "./components/TaskPriorityBoard";
+import TechAdviceCard from "./components/TechAdviceCard";
 function App() {
   return (
     <div>
       <ShoppingList />
       <TaskPriorityBoard />
+      <TechAdviceCard />
     </div>
   );
 }
