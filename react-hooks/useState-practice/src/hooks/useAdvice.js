@@ -20,7 +20,7 @@ export function useAdvice() {
     }
   };
 
-  // Fetch automatically on mount
+  // Fetch automatically on mount does this for only once
   useEffect(() => {
     fetchNewAdvice();
   }, []);
