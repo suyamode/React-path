@@ -6,5 +6,5 @@ export const getAdvice = async () => {
     throw new Error("Failed to fetch advice from server.");
   }
   const data = await response.json();
-  return data.slip.advice; // Returns pure data string
+  return data.slip.advice; 
 };
